@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:com:docsascodeasdocs:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+    xmlns="http://relaxng.org/ns/structure/1.0">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA DaCaD Indexing Domain</moduleTitle>
+        <headerComment>
+            =============================================================
+            HEADER                                    
+            =============================================================
+            MODULE:    DITA DaCaD Indexing  Domain                            
+            VERSION:   1.2                                              
+            DATE:      March 2020                           
+            
+            =============================================================
+            
+            =============================================================
+            PUBLIC DOCUMENT TYPE DEFINITION           
+            TYPICAL INVOCATION                        
+            
+            Refer to this file by the following public identifier or an
+            appropriate system identifier 
+            PUBLIC "-//DaCaD//ELEMENTS DITA DaCaD Indexing Domain//EN"
+            Delivered as file "indexingDomain.mod"                      
+            
+            =============================================================
+            SYSTEM:     Darwin Information Typing Architecture (DITA)    
+            
+            PURPOSE:    Declaring the elements and specialization        
+            attributes for the DITA Indexing Domain          
+            
+            ORIGINAL CREATION DATE:                                      
+            June 2006                                        
+            
+            (C) Copyright OASIS Open 2006, 2009.             
+            All Rights Reserved.                             
+            UPDATES:                                                    
+            2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+            2008.02.13 RDA: Create .content and .attributes entities  
+            =============================================================
+        </headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>dacad-indexing-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Indexing Domain//EN</dtdMod>
+                <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Indexing Domain//EN</dtdEnt>
+                <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-indexingDomainConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-indexingDomainConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-indexingDomainConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(topic indexing-d dacad-indexing-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    <div>
+        <a:documentation>Define domain extension patterns</a:documentation>
+          
+          <include href="indexingDomain.rng"/>
+          
+    </div>
+</grammar>

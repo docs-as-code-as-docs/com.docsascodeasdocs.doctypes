@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" 
+  xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA DaCaD Topic Module</moduleTitle>
+    <headerComment><![CDATA[
+=============================================================
+                   HEADER                                    
+=============================================================
+Darwin Information Typing Architecture (DITA) Version 1.3 Plus Errata 02
+OASIS Standard
+16 January 2018 
+Copyright (c) OASIS Open 2018. All rights reserved. 
+Source: http://docs.oasis-open.org/dita/dita/v1.3/errata02/csprd01/complete/part0-overview/dita-v1.3-errata02-csprd01-part0-overview-complete.html
+
+============================================================
+ MODULE:    DITA DaCaD DITA Topic                                  
+ VERSION:   1.3                                              
+ DATE:      March 2020                                    
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//DaCaD//ELEMENTS DITA Topic//EN"
+      Delivered as file "topic.mod"                               
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the elements and specialization        
+            attributes for the base Topic type               
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Corrected the public ID for tblDecl.mod   
+   2005.11.15 RDA: Removed old declaration for topicreftypes 
+                   entity                                    
+   2005.11.15 RDA: Corrected the PURPOSE in this comment     
+   2005.11.15 RDA: Corrected Long Names for alt, indextermref
+   2006.06.06 RDA: Bug fixes:                                
+                   Added xref and fn to fig.cnt              
+                   Remove xmlns="" from global-atts          
+   2006.06.06 RDA: Moved shared items to commonElements file 
+   2006.06.07 RDA: Added abstract> element                  
+   2006.06.07 RDA: Make universal attributes universal       
+                     (DITA 1.1 proposal #12)                 
+   2006.06.14 RDA: Add dir attribute to localization-atts    
+   2006.06.20 RDA: defn.cnt now explicitly sets its content  
+   2006.07.06 RDA: Moved class attributes in from topicAttr  
+   2006.11.30 RDA: Add -dita-use-conref-target to enumerated 
+                     attributes                              
+   2006.11.30 RDA: Remove #FIXED from DITAArchVersion        
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.01.28 RDA: Add draft-comment to body.cnt             
+   2008.01.28 RDA: Moved <metadata> defn. to metaDecl.mod    
+   2008.01.30 RDA: Replace @conref defn. with %conref-atts;  
+   2008.02.12 RDA: Add ph to linktext, navtitle, searchtitle 
+   2008.02.12 RDA: Modify imbeds to use specific 1.2 version 
+   2008.02.12 RDA: Move navtitle to commonElements.mod       
+   2008.02.13 RDA: Add bodydiv and sectiondiv                
+   2008.02.13 RDA: Create .content and .attributes entities  
+   2008.05.06 RDA: Moved sectiondiv to section.cnt; created  
+                   example.cnt for use by example element    
+=============================================================
+]]></headerComment>
+    <moduleMetadata>
+      <moduleType>dacad-topic</moduleType>
+      <moduleShortName>dacad-topic</moduleShortName>
+      <modulePublicIds>
+        <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Topic//EN</dtdEnt>
+        <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Topic//EN</dtdMod>
+        <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-topicModConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+        <xsdGrp>urn:com:docsascodeasdocs:dita:xsd:dacad-topicGrpConstraint.xsd<var presep=":" name="ditaver"/></xsdGrp>
+        <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-topicModConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+        <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-topicModConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+      </modulePublicIds>
+    </moduleMetadata>
+    <domainsContribution>(topic dacad-topicConstraint-c)</domainsContribution>
+  </moduleDesc>
+  
+  <div>
+    <a:documentation>CONTENT MODEL OVERRIDES</a:documentation>
+    
+    <include href="topicMod.rng"/>
+    
+  </div>
+</grammar>

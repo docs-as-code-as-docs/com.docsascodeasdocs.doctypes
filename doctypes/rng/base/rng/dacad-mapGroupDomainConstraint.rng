@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/" xmlns="http://relaxng.org/ns/structure/1.0"
+    datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA Map Group Domain</moduleTitle>
+        <headerComment xml:space="preserve">
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA DaCaD Map Group Domain                            
+ VERSION:   1.2                                              
+ DATE:      March 2020                                    
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//DaCaD//ELEMENTS DITA DaCaD Map Group Domain//EN"
+      Delivered as file "dacad-mapGroup.mod"                            
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Define elements and specialization attributes    
+            for Map Group Domain                             
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Corrected the "Delivered as" system ID    
+   2006.06.07 RDA: Make universal attributes universal       
+                     (DITA 1.1 proposal #12)                 
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.02.01 RDA: Added keydef element, keys attributes     
+   2008.02.12 RDA: Navtitle no longer required on topichead  
+   2008.02.13 RDA: Create .content and .attributes entities  
+   2010.09.20 RDA: Add copy-to to topichead                  
+=============================================================
+      
+    </headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>dacad-mapgroup-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Map Group Domain//EN</dtdMod>
+                <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Map Group Domain//EN</dtdEnt>
+                <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-mapGroupModConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-mapGroupModConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-mapGroupModConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(map mapgroup-d dacad-mapgroup-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    
+    <div>
+        <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+        
+        <include href="mapGroupDomain.rng"/>
+        
+    </div>

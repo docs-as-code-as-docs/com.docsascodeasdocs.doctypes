@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:com:docsascodeasdocs:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+    xmlns:dita="http://dita.oasis-open.org/architecture/2005/" 
+    xmlns="http://relaxng.org/ns/structure/1.0">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA DaCaD Highlight Domain</moduleTitle>
+        <headerComment>
+            MODULE: DITA DaCaD Highlight Domain VERSION: 1.2 DATE:
+            March 2020 
+            
+            SYSTEM: Darwin Information Typing Architecture (DITA)
+            PURPOSE: Define elements and specialization attributes for Highlight Domain 
+            
+            ORIGINAL CREATION DATE: March 2001 
+            
+            (C) Copyright OASIS Open 2005, 2009. 
+            (C) Copyright IBM Corporation 2001, 2004. All Rights Reserved.
+            
+            UPDATES: 
+            2005.11.15 RDA: Corrected descriptive names for all elements except bold 
+            2005.11.15 RDA: Corrected the "Delivered as" system ID 
+            2007.12.01 WEK: Reformatted DTD modulesfor DITA 1.2  
+            2008.02.13 RDA: Create .content and .attributes entities 
+        </headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>dacad-hi-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Highlight Domain//EN</dtdMod>
+                <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Highlight Domain//EN</dtdEnt>
+                <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-highlightDomainConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-highlightDomainConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-highlightDomainConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(topic hi-d dacad-hi-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    
+    <div>
+        <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+        
+        <include href="highlightDomain.rng"/>
+        
+    </div>
+</grammar>

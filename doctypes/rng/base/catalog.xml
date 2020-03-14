@@ -92,6 +92,17 @@
               uri="rng/utilitiesDomain.rng"/>
       <system systemId="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"
               uri="rng/utilitiesDomain.rng"/>
+      <!-- CUSTOMIZATIONS -->
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-highlightDomainConstraint.rng"
+              uri="rng/dacad-highlightDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-indexingDomainConstraint.rng" 
+              uri="rng/dacad-indexingDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-"
+              uri="rng/dacad-mapGroupDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-mapModConstraint.rng"
+              uri="rng/dacad-mapModConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-topicModConstraint.rng"
+              uri="rng/dacad-topicModConstraint.rng"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
       <uri name="urn:oasis:names:tc:dita:rng:basemap.rng:1.3"
@@ -179,5 +190,16 @@
            uri="rng/utilitiesDomain.rng"/>
       <uri name="urn:oasis:names:tc:dita:rng:utilitiesDomain.rng"
            uri="rng/utilitiesDomain.rng"/>
+       <!-- CUSTOMIZATIONS -->
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-highlightDomainConstraint.rng"
+                   uri="rng/dacad-highlightDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-indexingDomainConstraint.rng" 
+                   uri="rng/dacad-indexingDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-"
+                   uri="rng/dacad-mapGroupDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-mapModConstraint.rng"
+                   uri="rng/dacad-mapModConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-topicModConstraint.rng"
+                   uri="rng/dacad-topicModConstraint.rng"/>
    </group>
 </catalog>

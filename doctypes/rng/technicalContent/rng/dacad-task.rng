@@ -96,6 +96,7 @@ ORIGINAL CREATION DATE:
                          (topic svg-d)
                          (topic sw-d)
                          (topic task strictTaskbody-c)
+                         (topic task dacad-strictTaskbody-c)
                          (topic task)
                          (topic ui-d)
                          (topic ut-d)
