@@ -53,33 +53,9 @@ ORIGINAL CREATION DATE:
 
   <div>
     <a:documentation>CONTENT MODEL OVERRIDES</a:documentation>
-    <include href="taskMod.rng">
-      <define name="taskbody.content">
-        <optional>
-          <ref name="prereq"/>
-        </optional>
-        <optional>
-          <ref name="context"/>
-        </optional>
-        <optional>
-          <choice>
-            <ref name="steps"/>
-            <ref name="steps-unordered"/>
-          </choice>
-        </optional>
-        <optional>
-          <ref name="result"/>
-        </optional>
-        <optional>
-          <ref name="tasktroubleshooting"/>
-        </optional>
-        <optional>
-          <ref name="example"/>
-        </optional>
-        <optional>
-          <ref name="postreq"/>
-        </optional>
-      </define>
+    <include href="strictTaskbodyConstraintMod.rng">
+      
+    
     </include>
   </div>
 </grammar>

@@ -79,8 +79,8 @@ ORIGINAL CREATION DATE:
 =============================================================
 ]]></headerComment>
     <moduleMetadata>
-      <moduleType>dacad-topic</moduleType>
-      <moduleShortName>dacad-topic</moduleShortName>
+      <moduleType>topic</moduleType>
+      <moduleShortName>dacad-topicModConstraint-c</moduleShortName>
       <modulePublicIds>
         <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Topic//EN</dtdEnt>
         <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Topic//EN</dtdMod>
@@ -90,7 +90,7 @@ ORIGINAL CREATION DATE:
         <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-topicModConstraint.rng<var presep=":" name="ditaver"/></rngMod>
       </modulePublicIds>
     </moduleMetadata>
-    <domainsContribution>(topic dacad-topicConstraint-c)</domainsContribution>
+    <domainsContribution>(topic dacad-topicModConstraint-c)</domainsContribution>
   </moduleDesc>
   
   <div>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:com:docsascodeasdocs:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/" xmlns="http://relaxng.org/ns/structure/1.0">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA DaCaD Programming Domain Constraint</moduleTitle>
+        <headerComment xml:space="preserve">
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA DaCaD Programming Domain  Constraint                   
+ VERSION:   1.2                                              
+ DATE:      March 2020                                
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//DaCaD//ELEMENTS DITA DaCaD Programming Domain Constraint//EN"
+      Delivered as file "dacad-programmingDomainConstraint.mod"                   
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the elements and specialization        
+            attributes for the Programming Domain            
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Updated these comments to match template  
+   2005.11.15 RDA: Corrected Long Names for syntax groups,   
+                   codeph, and kwd                           
+   2005.11.15 RDA: Corrected the "Delivered as" system ID    
+   2006.06.07 RDA: Make universal attributes universal       
+                     (DITA 1.1 proposal #12)                 
+   2006.11.30 RDA: Add -dita-use-conref-target to enumerated 
+                     attributes                              
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.02.12 RDA: Add text to synph, items with only #PCDATA
+   2008.02.12 RDA: Add coderef element                       
+   2008.02.13 RDA: Create .content and .attributes entities  
+=============================================================
+</headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>dacad-pr-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Programming Domain//EN</dtdMod>
+                <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Programming Domain//EN</dtdEnt>
+                <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-programmingDomainConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-programmingDomainConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-programmingDomainConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(topic pr-d dacad-pr-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    <div>
+        <a:documentation>CONTENT MODEL OVERRIDES</a:documentation>
+        
+        <include href="programmingDomain.rng">
+
+            <define name="pr-d-ph">
+                <choice>
+                    <ref name="codeph.element"/>
+                </choice>
+            </define>
+  
+           <define name="pr-d-fig">
+               <notAllowed/>
+           </define>
+            
+            <define name="pr-d-keyword">
+                <choice>
+                    <ref name="option.element"/>
+                    <ref name="parmname.element"/>
+                </choice>
+            </define>
+
+            <define name="parml.content">
+                <zeroOrMore dita:since="1.3">
+                    <choice>
+                        <oneOrMore>
+                            <ref name="plentry"/>
+                        </oneOrMore>
+                    </choice>
+                </zeroOrMore>
+            </define>
+            
+            <define name="codeblock.content">
+                <zeroOrMore>
+                    <choice>
+                        <text/>
+                        <ref name="coderef"/>
+                    </choice>
+                </zeroOrMore>
+            </define>
+        </include>
+    </div>
+    
+    <div>
+        <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+        <define name="dacad-pr-d-ph">
+            <zeroOrMore>
+                <ref name="pr-d-ph"/>
+            </zeroOrMore>
+        </define>
+        
+        <define name="dacad-pr-d-pre">
+            <zeroOrMore>
+                <ref name="pr-d-pre"/>
+            </zeroOrMore>
+        </define>
+        
+        <define name="dacad-pr-d-keyword">
+            <zeroOrMore>
+                <ref name="pr-d-keyword"/>
+            </zeroOrMore>
+        </define>
+        
+        <define name="dacad-pr-d-dl">
+            <zeroOrMore>
+                <ref name="pr-d-dl"/>
+            </zeroOrMore>
+        </define>
+
+       <define name="codeph.content" combine="choice">
+           <zeroOrMore>
+               <choice>
+                   <text/>
+                   <ref name="basic.ph.notm"/>
+                   <ref name="data.elements.incl"/>
+                   <ref name="draft-comment" dita:since="1.3"/>
+                   <ref name="foreign.unknown.incl"/>
+                   <ref name="required-cleanup" dita:since="1.3"/>
+                   <ref name="keyword"/>
+               </choice>
+           </zeroOrMore>
+       </define>
+        
+    </div>
+</grammar>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:com:docsascodeasdocs:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/" xmlns="http://relaxng.org/ns/structure/1.0"
+    xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+        <moduleTitle>DITA DaCaD Software DomainConstraint</moduleTitle>
+        <headerComment xml:space="preserve">
+=============================================================
+                   HEADER                                    
+=============================================================
+ MODULE:    DITA DaCaD Software Domain Constraint                         
+ VERSION:   1.2                                              
+ DATE:      March 2020                       
+                                                             
+=============================================================
+
+=============================================================
+                   PUBLIC DOCUMENT TYPE DEFINITION           
+                   TYPICAL INVOCATION                        
+                                                             
+ Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//DaCaD//ELEMENTS DITA DaCaD Software Domain//EN"
+      Delivered as file "softwareDomain.mod"                      
+
+=============================================================
+SYSTEM:     Darwin Information Typing Architecture (DITA)    
+                                                             
+PURPOSE:    Declaring the elements and specialization        
+            attributes for the Software Domain               
+                                                             
+ORIGINAL CREATION DATE:                                      
+            March 2001                                       
+                                                             
+            (C) Copyright OASIS Open 2005, 2009.             
+            (C) Copyright IBM Corporation 2001, 2004.        
+            All Rights Reserved.                             
+                                                             
+ UPDATES:                                                    
+   2005.11.15 RDA: Corrected the PURPOSE in this comment     
+   2005.11.15 RDA: Corrected the "Delivered as" system ID    
+   2007.12.01 EK:  Reformatted DTD modules for DITA 1.2       
+   2008.02.12 RDA: Add text to msgnum, cmdname, varname      
+   2008.02.13 RDA: Create .content and .attributes entities  
+=============================================================  
+</headerComment>
+        <moduleMetadata>
+            <moduleType>elementdomain</moduleType>
+            <moduleShortName>dacad-sw-d</moduleShortName>
+            <modulePublicIds>
+                <dtdMod>-//DaCaD//ELEMENTS DITA<var presep=" " name="ditaver"/> DaCaD Software Domain//EN</dtdMod>
+                <dtdEnt>-//DaCaD//ENTITIES DITA<var presep=" " name="ditaver"/> DaCaD Software Domain//EN</dtdEnt>
+                <xsdMod>urn:com:docsascodeasdocs:dita:xsd:dacad-softwareDomainConstraint.xsd<var presep=":" name="ditaver"/></xsdMod>
+                <rncMod>urn:com:docsascodeasdocs:dita:rnc:dacad-softwareDomainConstraint.rnc<var presep=":" name="ditaver"/></rncMod>
+                <rngMod>urn:com:docsascodeasdocs:dita:rng:dacad-softwareDomainConstraint.rng<var presep=":" name="ditaver"/></rngMod>
+            </modulePublicIds>
+            <domainsContribution>(topic sw-d dacad-sw-d)</domainsContribution>
+        </moduleMetadata>
+    </moduleDesc>
+    <div>
+        <a:documentation>CONTENT MODEL OVERRIDES</a:documentation>
+        
+        <include href="softwareDomain.rng">
+            
+            <define name="sw-d-ph" combine="choice">
+                <choice>
+                    <ref name="filepath.element"/>
+                    <ref name="userinput.element"/>
+                </choice>
+            </define>
+            
+            <define name="sw-d-keyword" combine="choice">
+                <choice>
+                    <ref name="cmdname.element"/>
+                </choice>
+            </define>
+            
+            <define name="cmdname.content" combine="choice">
+                <choice>
+                    <text/>
+                </choice>
+            </define>
+            
+            <define name="userinput.content" combine="choice">
+                <choice>
+                    <text/>
+                </choice>
+            </define>
+            
+            <define name="filepath.content" combine="choice">
+                <zeroOrMore>
+                    <choice>
+                        <text/>
+                        <ref name="userinput"/>
+                        <ref name="keyword"/>
+                    </choice>
+                </zeroOrMore>
+            </define>
+            
+            <define name="ph" combine="choice">
+                <ref name="sw-d-ph"/>
+            </define>
+            
+            <define name="keyword" combine="choice">
+                <ref name="sw-d-keyword"/>
+            </define>
+            
+        </include>
+       
+        <define name="dacad-d-ph">
+           <zeroOrMore>
+               <ref name="sw-d-ph"/>
+               <ref name="sw-d-keyword"/>
+           </zeroOrMore>
+        </define>
+
+    </div>
+</grammar>

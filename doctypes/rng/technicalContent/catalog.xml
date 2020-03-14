@@ -199,6 +199,18 @@
               uri="rng/dacad-reference.rng"/>
       <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-map.rng"
               uri="rng/dacad-map.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-dacad-conceptModConstraint.rng" 
+                   uri="rng/dacad-conceptModConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-programmingDomainConstraint.rng" 
+                   uri="rng/dacad-programmingDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-softwareDomainConstraint.rng" 
+                   uri="rng/dacad-softwareDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-strictTaskbodyConstraintMod.rng" 
+                   uri="rng/dacad-strictTaskbodyConstraintMod.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-uiDomainConstraint.rng" 
+                   uri="rng/dacad-uiDomainConstraint.rng"/>
+           <system systemId="urn:com:docsascodeasdocs:dita:rng:dacad-referenceModConstraint" 
+                   uri="rng/dacad-referenceModConstraint.rng"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
       <uri name="urn:oasis:names:tc:dita:rng:abbreviateDomain.rng:1.3"
@@ -391,5 +403,17 @@
            uri="rng/dacad-reference.rng"/>
       <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-map.rng"
            uri="rng/dacad-map.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-conceptModConstraint.rng"
+                   uri="rng/dacad-conceptModConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-programmingDomainConstraint.rng"
+                   uri="rng/dacad-programmingDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-softwareDomainConstraint.rng"
+                   uri="rng/dacad-softwareDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-strictTaskbodyConstraintMod.rng"
+                   uri="rng/dacad-strictTaskbodyConstraintMod.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-uiDomainConstraint.rng"
+                   uri="rng/dacad-uiDomainConstraint.rng"/>
+           <uri name="urn:com:docsascodeasdocs:dita:rng:dacad-referenceModConstraint.rng"
+                   uri="rng/dacad-referenceModConstraint.rng"/>
    </group>
 </catalog>
